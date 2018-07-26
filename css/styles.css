@@ -1,0 +1,287 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+	background-color: #E1E2E3;
+	line-height: 1.3;
+	width: 92%;
+	margin: auto;
+}
+
+h3,
+h4 {
+	margin-top: 0;
+	font-size: 0.8em;
+}
+
+h3,
+h4,
+p {
+	text-align: center;
+}
+
+p {
+	 margin-bottom: 1.5em;
+	 font-size: 0.8em;
+ }
+
+ ul {
+ 	padding-left: 0;
+ }
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+hr {
+	margin: 0;
+}
+
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+ .name,
+ .name1,
+ nav {
+	 font-weight: bolder;
+ }
+
+ .profile-p {
+	 font-size: 1em;
+ }
+
+.back {
+	float: right;
+}
+
+nav a {
+	font-size: 0.65em;
+	color: black;
+}
+
+nav li:hover {
+	background-color: #3f87a6;
+}
+
+nav li {
+list-style: none;
+}
+
+.name,
+.main-nav a {
+	display: block;
+	padding: 3px 5px;
+	text-align: center;
+}
+
+.main-nav li {
+	background-color: #8FEBB5;
+	margin-top: 5px;
+}
+
+.zero,
+nav a {
+	text-transform: uppercase;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding: 5px 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 1em;
+	margin: 5px 0 0 0;
+}
+
+.profile {
+	font-family: 'Dancing Script', cursive;
+}
+
+.profile-img {
+	padding-right: 1.8em;
+	padding-left: 1.8em;
+}
+
+.title {
+	padding-top: 15px;
+}
+
+.skills,
+.portfolio {
+	background: linear-gradient(#8FEBB5, #D9C5AB);
+	padding: 20px 0 40px;
+}
+
+.col {
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+.contact {
+	padding: 2em 0.1em;
+}
+
+.last-footer {
+	margin: 20px 0;
+}
+
+.name1 {
+	float: left;
+
+}
+
+.name1,
+.back {
+	display: inline-block;
+	font-size: 1em;
+	list-style: none;
+}
+
+.skills .col {
+	border: solid black 1.5px;
+	border-radius: 20px;
+	margin: 10px 5px;
+	padding: 10px 5px;
+	color: #2009ED;
+}
+
+.back {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+
+@media (min-width: 320px) {
+
+nav ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+ }
+
+.col {
+	width: 100%;
+	}
+	.skills {
+		padding-right: 15px;
+		padding-left:  5px;
+	}
+}
+
+
+
+@media (min-width: 768px) {
+
+ .col {
+	 float: left;
+	 width: 50%;
+	}
+
+	.name,
+	ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.main-nav li {
+	background-color: #E1E2E3;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+
+	.container {
+		padding-top: 10px;
+	}
+
+	.main-nav {
+		padding-top: 10px;
+		padding-bottom: 15px;
+	}
+
+	.skills {
+		padding-right: 20px;
+		padding-left:  10px;
+	}
+
+	.skills .col {
+		width: 100%;
+	}
+
+ .profile-img {
+ 	float: right;
+ 	margin-left: 20px;
+ 	margin-bottom: 35px;
+	width:50%;
+ 	}
+
+	.clearfix::after  {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.name {
+ 	 float: left;
+ 	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	ul {
+	flex-direction: row;
+	justify-content:flex-end;
+}
+
+.col {
+	width: 33.1%;
+	}
+
+.skills .col {
+	width: 32%;
+	}
+
+	.skills {
+		padding-right: 10px;
+		padding-left:  5px;
+	}
+
+	.skills,
+	.portfolio {
+	padding: 25px 20px;
+
+}
