@@ -98,8 +98,17 @@ nav a {
 	text-transform: uppercase;
 }
 
+.footer-nav {
+	display: none;
+}
+
 
 /* ---- Layout Containers ---- */
+
+.container {
+	margin: 0 auto;
+	width: 90%;
+ }
 
 .main-header {
 	padding: 5px 5px;
@@ -129,6 +138,11 @@ nav a {
 .portfolio {
 	background: linear-gradient(#8FEBB5, #D9C5AB);
 	padding: 20px 0 40px;
+}
+
+.skills {
+	padding-right: 10px;
+	padding-left:  5px;
 }
 
 .col {
@@ -163,7 +177,7 @@ nav a {
 	padding: 10px 5px;
 	color: #2009ED;
 }
-
+.main-nav,
 .back {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -174,29 +188,6 @@ nav a {
 /* =================================
   Media Queries
 ==================================== */
-
-
-@media (min-width: 320px) {
-
-nav ul {
-	margin-top: 0;
-	margin-bottom: 0;
-	}
-
-.container {
-	margin: 0 auto;
-	width: 90%;
- }
-
-.col {
-	width: 100%;
-	}
-	.skills {
-		padding-right: 15px;
-		padding-left:  5px;
-	}
-}
-
 
 
 @media (min-width: 768px) {
@@ -213,6 +204,7 @@ nav ul {
 	justify-content: center;
 }
 
+.footer-nav li,
 .main-nav li {
 	background-color: #E1E2E3;
 	padding-left: 15px;
@@ -243,6 +235,16 @@ nav ul {
  	margin-bottom: 35px;
 	width:50%;
  	}
+
+	.back {
+		display: none;
+	}
+
+	.footer-nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+}
 
 	.clearfix::after  {
 		content: "";
