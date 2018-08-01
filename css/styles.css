@@ -58,10 +58,16 @@ hr {
  .name1,
  nav {
 	 font-weight: bolder;
+	 font-family: 'Orbitron', sans-serif;
  }
 
  .profile-p {
 	 font-size: 1em;
+ }
+
+ .profile {
+	  margin-top: 20px;
+
  }
 
 .back {
@@ -121,10 +127,6 @@ nav a {
 	margin: 5px 0 0 0;
 }
 
-.profile {
-	font-family: 'Dancing Script', cursive;
-}
-
 .profile-img {
 	padding-right: 1.8em;
 	padding-left: 1.8em;
@@ -166,7 +168,7 @@ nav a {
 .name1,
 .back {
 	display: inline-block;
-	font-size: 1em;
+	font-size: 0.9em;
 	list-style: none;
 }
 
